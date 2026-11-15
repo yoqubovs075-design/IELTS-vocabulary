@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#07060f">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>IELTS 200 · Lexicon</title>
+<style>
+:root{--bg:#07060f;--glass:rgba(255,255,255,.06);--bd:rgba(255,255,255,.12);--ink:#f5f2ff;--mut:#a9a3cf;--p:#8b5cf6;--k:#ec4899;--c:#22d3ee;--g:#34d399;--r:#fb7185;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#f6f3ff;--glass:rgba(255,255,255,.7);--bd:rgba(80,50,160,.15);--ink:#1b1638;--mut:#625c8a}}
+:root[data-theme="light"]{--bg:#f6f3ff;--glass:rgba(255,255,255,.7);--bd:rgba(80,50,160,.15);--ink:#1b1638;--mut:#625c8a}
+*{box-sizing:border-box}html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font-family:Sora,system-ui,-apple-system,sans-serif;min-height:100vh;padding:22px 14px 50px;overflow-x:hidden}
+.aur{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+.aur i{position:absolute;width:55vmax;height:55vmax;border-radius:50%;filter:blur(90px);opacity:.38;animation:fl 18s ease-in-out infinite alternate}
+.aur i:nth-child(1){background:var(--p);top:-20vmax;left:-15vmax}
+.aur i:nth-child(2){background:var(--k);bottom:-25vmax;right:-15vmax;animation-delay:-6s}
+.aur i:nth-child(3){background:var(--c);top:30%;left:45%;width:35vmax;height:35vmax;opacity:.2;animation-delay:-11s}
+@keyframes fl{to{transform:translate(8vmax,6vmax) scale(1.2)}}
+.wrap{position:relative;z-index:1;max-width:1040px;margin:0 auto}
+h1{font-size:clamp(1.9rem,6vw,3rem);font-weight:800;margin:0;letter-spacing:-.03em;background:linear-gradient(90deg,#fff0,#fff0),linear-gradient(90deg,var(--c),var(--p) 45%,var(--k));-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{color:var(--mut);margin:4px 0 18px;font-size:.9rem}
+.glass{background:var(--glass);border:1px solid var(--bd);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-radius:20px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:14px}
+.st{padding:12px 14px}.st b{display:block;font-size:1.5rem;font-weight:800}.st span{font-size:.72rem;color:var(--mut);text-transform:uppercase;letter-spacing:.08em}
+.bar{height:6px;border-radius:9px;background:var(--bd);margin-top:8px;overflow:hidden}.bar u{display:block;height:100%;background:linear-gradient(90deg,var(--c),var(--k));width:0;transition:width .5s}
+.tabs{display:flex;gap:6px;padding:5px;margin-bottom:14px}
+button{font:inherit;color:var(--ink);cursor:pointer;border:1px solid var(--bd);background:var(--glass);padding:9px 14px;border-radius:14px;transition:.2s}
+button:hover{border-color:var(--p);transform:translateY(-1px)}
+.tab{flex:1;border:0;background:none;padding:9px 4px;font-size:.85rem}.tab.on{background:linear-gradient(135deg,var(--p),var(--k));color:#fff;box-shadow:0 6px 22px rgba(139,92,246,.45)}
+.row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+input{flex:1;min-width:140px;font:inherit;color:var(--ink);background:var(--glass);border:1px solid var(--bd);border-radius:14px;padding:10px 14px;outline:none}input:focus{border-color:var(--c)}
+.chips{display:flex;gap:6px;overflow-x:auto;padding-bottom:8px;margin-bottom:10px}.chip{white-space:nowrap;font-size:.8rem;padding:6px 12px;border-radius:99px}
+.chip.on{background:linear-gradient(135deg,var(--c),var(--p));color:#fff;border-color:transparent}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px}
+.card{perspective:1000px;height:200px;cursor:pointer;position:relative}
+.card.big{height:300px;max-width:440px;margin:0 auto 16px}
+.in{position:absolute;inset:0;transition:transform .6s cubic-bezier(.2,.8,.2,1);transform-style:preserve-3d}.card.flip .in{transform:rotateY(180deg)}
+.face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:22px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:18px;overflow:hidden}
+.front{background:var(--glass);border:1px solid var(--bd);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);box-shadow:0 10px 34px rgba(0,0,0,.25)}
+.card:hover .front{border-color:var(--p);box-shadow:0 0 0 1px var(--p),0 12px 40px rgba(139,92,246,.35)}
+.back{background:linear-gradient(145deg,var(--p),var(--k));color:#fff;transform:rotateY(180deg);box-shadow:0 14px 44px rgba(236,72,153,.4)}
+.t{font-size:1.45rem;font-weight:800;letter-spacing:-.01em}.big .t{font-size:2.2rem}
+.m{font-size:.8rem;margin-top:8px;opacity:.8;line-height:1.35}.front .m{color:var(--mut);opacity:1}
+.ex{font-size:.78rem;margin-top:10px;padding-top:10px;border-top:1px solid rgba(255,255,255,.3);font-style:italic;opacity:.95}
+.ex::after{content:" 🔊"}
+.card:focus-visible{outline:2px solid var(--c);outline-offset:3px;border-radius:22px}
+.tag{position:absolute;top:12px;left:16px;font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;opacity:.65}
+.num{position:absolute;top:12px;right:16px;font-size:.66rem;opacity:.65}
+.spk{position:absolute;bottom:10px;right:12px;padding:5px 9px;border-radius:99px;font-size:.8rem;background:rgba(255,255,255,.14);border-color:transparent;color:inherit}
+.panel{padding:20px;text-align:center}.panel h2{margin:0 0 10px;font-size:1.2rem}
+.act{display:flex;gap:10px;justify-content:center}.act button{flex:1;max-width:200px;padding:13px;font-weight:600}
+.again{background:rgba(251,113,133,.18);border-color:var(--r)}.good{background:rgba(52,211,153,.18);border-color:var(--g)}
+.q{font-size:2rem;font-weight:800;margin:14px 0 18px}
+.opts{display:grid;gap:10px;max-width:480px;margin:0 auto}.opts button{padding:14px;text-align:left}
+.opts .ok{background:rgba(52,211,153,.25);border-color:var(--g)}.opts .no{background:rgba(251,113,133,.25);border-color:var(--r)}
+.hint{color:var(--mut);font-size:.8rem;margin:0 0 12px}
+.hide{display:none}
+.ai{padding:16px}.ai select,.ai textarea{width:100%;font:inherit;color:var(--ink);background:var(--glass);border:1px solid var(--bd);border-radius:14px;padding:10px 14px;outline:none;margin-bottom:10px}.ai select option{color:#000}
+.ai textarea{min-height:80px;resize:vertical}.modes{display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap}.modes button.on{background:linear-gradient(135deg,var(--c),var(--p));color:#fff;border-color:transparent}
+.go{background:linear-gradient(135deg,var(--p),var(--k));color:#fff;border-color:transparent;width:100%;font-weight:600}
+.log{display:grid;gap:10px;margin-top:14px}.msg{padding:12px 14px;border-radius:16px;white-space:pre-wrap;line-height:1.55;font-size:.92rem}.msg.u{background:rgba(139,92,246,.25);justify-self:end;max-width:90%}.msg.a{background:var(--glass);border:1px solid var(--bd)}
+.tyr{margin:14px 0;text-align:left;line-height:1.8}.rok{color:var(--g);font-weight:800;font-size:1.1rem}.rno{color:var(--r);font-weight:800;font-size:1.1rem}
+.tyr s{color:var(--r);font-weight:700}.tyr u{color:var(--g);font-weight:800;text-decoration:underline}.tyr .m{opacity:.85}
+.panel input{width:100%;margin-bottom:10px;text-align:center;font-size:1.25rem}
+.thm{position:absolute;top:0;right:0;padding:8px 12px;border-radius:99px;font-size:1.1rem;line-height:1;z-index:2}
+:root[data-theme="light"] .aur i{opacity:.2}
+:root[data-theme="light"] .front .spk{background:var(--bd)}
+:root[data-theme="light"] .st b,:root[data-theme="light"] .t{color:var(--ink)}
+</style></head><body>
+<div class="aur"><i></i><i></i><i></i></div>
+<div class="wrap">
+<button class="thm" id="thm" aria-label="Theme">🌙</button>
+<h1>IELTS Lexicon</h1>
+<p class="sub">200 words · English ⇄ Oʻzbekcha · spaced repetition</p>
+<div class="stats">
+<div class="st glass"><b id="s1">0</b><span>🔥 Streak</span></div>
+<div class="st glass"><b id="s2">0/10</b><span>Today</span><div class="bar"><u id="b2"></u></div></div>
+<div class="st glass"><b id="s3">0</b><span>★ Mastered</span><div class="bar"><u id="b3"></u></div></div>
+</div>
+<div class="tabs glass"><button class="tab on" data-v="br">Browse</button><button class="tab" data-v="st">Study</button><button class="tab" data-v="qz">Quiz</button><button class="tab" data-v="ty">Type ⌨️</button></div>
+<div class="row"><button id="dir">EN → UZ</button></div>
+<section id="br">
+<div class="row"><input id="q" placeholder="Search · Qidirish…" autocomplete="off"><button id="shuf">🔀</button></div>
+<div class="chips" id="chips"></div><div class="grid" id="grid"></div>
+</section>
+<section id="st" class="hide"><p class="hint">Tap the card to flip · Kartani bos</p><div id="stc"></div></section>
+<section id="qz" class="hide"><div class="panel glass" id="qzc"></div></section>
+<section id="ty" class="hide"><div class="panel glass" id="tyc"></div></section>
+<section id="ai" class="hide"><div class="ai glass"><select id="aiw"></select><div class="modes"><button class="on" data-m="ex">📖 Tushuntir</button><button data-m="ck">✍️ Check sentence</button><button data-m="sp">🎤 Speaking</button></div><textarea id="ait" class="hide"></textarea><button class="go" id="aig">Tushuntir</button><div class="log" id="ailog"></div></div></section>
+</div>
+<script>
+var D=[
+["General",`significant|muhim, sezilarli|important, notable
+approach|yondashuv|a way of dealing with something
+benefit|foyda|an advantage or gain
+challenge|qiyinchilik, sinov|a difficult task
+consequence|oqibat|a result of an action
+contribute|hissa qo’shmoq|give to a shared goal
+crucial|hal qiluvchi|extremely important
+demonstrate|namoyish etmoq|show clearly
+derive|kelib chiqmoq|obtain from a source
+emphasize|ta’kidlamoq|give special importance
+enhance|yaxshilamoq|improve the quality
+establish|o’rnatmoq, tashkil etmoq|set up, found
+estimate|baholamoq|roughly calculate
+evidence|dalil|facts proving something
+factor|omil|something that influences a result
+fundamental|asosiy, tub|basic, essential
+impact|ta’sir|strong effect
+indicate|ko’rsatmoq|point to, suggest
+involve|jalb qilmoq|include as a part
+maintain|saqlamoq|keep in good condition`],
+["Analysis",`analyse|tahlil qilmoq|study in detail
+assume|taxmin qilmoq|accept as true without proof
+attribute|nisbat bermoq|regard as caused by
+conclude|xulosa qilmoq|decide after thinking
+conduct|o’tkazmoq|carry out
+consider|hisobga olmoq|think carefully about
+define|ta’riflamoq|state the meaning
+determine|aniqlamoq|find out exactly
+distinguish|farqlamoq|recognise the difference
+examine|tekshirmoq|inspect closely
+identify|aniqlamoq, belgilamoq|recognise, name
+illustrate|misol bilan ko’rsatmoq|explain with examples
+imply|nazarda tutmoq|suggest indirectly
+interpret|talqin qilmoq|explain the meaning
+justify|oqlamoq, asoslamoq|show to be reasonable
+obtain|qo’lga kiritmoq|get, acquire
+occur|sodir bo’lmoq|happen
+predict|bashorat qilmoq|say what will happen
+promote|rag’batlantirmoq|encourage, support
+reveal|oshkor qilmoq|make known`],
+["Environment",`pollution|ifloslanish|harmful substances in nature
+climate change|iqlim o’zgarishi|long-term shift in weather
+global warming|global isish|rising Earth temperature
+greenhouse gas|issiqxona gazi|gas that traps heat
+emission|emissiya, chiqindi gaz|gas released into the air
+renewable energy|qayta tiklanuvchi energiya|energy that never runs out
+fossil fuel|qazilma yoqilg’i|coal, oil, gas
+deforestation|o’rmonlarning kesilishi|clearing of forests
+biodiversity|biologik xilma-xillik|variety of living things
+endangered species|yo’qolib borayotgan turlar|at risk of dying out
+habitat|yashash muhiti|natural home of an animal
+ecosystem|ekotizim|living things and their environment
+sustainable|barqaror|able to continue long-term
+conservation|muhofaza|protection of nature
+recycle|qayta ishlamoq|reuse materials
+waste|chiqindi|unwanted material
+drought|qurg’oqchilik|long period without rain
+flood|suv toshqini|overflow of water on land
+extinction|yo’q bo’lib ketish|dying out completely
+natural resources|tabiiy resurslar|materials from nature`],
+["Education",`curriculum|o’quv dasturi|subjects taught in school
+literacy|savodxonlik|ability to read and write
+tuition fees|o’qish haqi|money paid for teaching
+scholarship|stipendiya|money awarded for study
+compulsory|majburiy|required by law
+higher education|oliy ta’lim|university-level study
+vocational|kasbiy|related to a job skill
+academic performance|o’zlashtirish|how well a student does
+skill|ko’nikma|ability to do something well
+knowledge|bilim|facts and understanding
+qualification|malaka|official proof of training
+lecture|ma’ruza|a talk given to students
+assignment|topshiriq|a task given to a student
+graduate|bitiruvchi|someone with a degree
+enrol|ro’yxatdan o’tmoq|officially join a course
+distance learning|masofaviy ta’lim|studying remotely
+peer|tengdosh|person of the same age or status
+discipline|intizom|training to obey rules
+critical thinking|tanqidiy fikrlash|analysing facts to judge
+extracurricular|darsdan tashqari|outside the regular classes`],
+["Technology",`innovation|innovatsiya|a new idea or method
+invention|ixtiro|something newly created
+artificial intelligence|sun’iy intellekt|machines that mimic thinking
+automation|avtomatlashtirish|use of machines instead of people
+device|qurilma|a piece of equipment
+software|dasturiy ta’minot|computer programs
+digital|raqamli|using electronic data
+network|tarmoq|connected system
+data|ma’lumotlar|facts and figures
+surveillance|kuzatuv|close watching of people
+privacy|shaxsiy hayot daxlsizligi|freedom from public attention
+cybercrime|kiberjinoyat|crime done online
+breakthrough|katta yutuq|important discovery
+cutting-edge|ilg’or|most advanced
+obsolete|eskirgan|no longer used
+addiction|qaramlik|inability to stop doing something
+social media|ijtimoiy tarmoqlar|online platforms for sharing
+online|onlayn|connected to the internet
+user-friendly|foydalanishga qulay|easy to use
+technological advance|texnologik taraqqiyot|progress in technology`],
+["Health",`nutrition|ovqatlanish|food needed for health
+obesity|semizlik|being seriously overweight
+sedentary|kam harakatli|sitting a lot, inactive
+disease|kasallik|illness
+treatment|davolash|medical care
+prevention|oldini olish|stopping something happening
+symptom|alomat|sign of illness
+diagnosis|tashxis|identifying an illness
+cure|davo|remedy that heals
+epidemic|epidemiya|widespread disease outbreak
+immune system|immunitet tizimi|body’s defence against disease
+mental health|ruhiy salomatlik|emotional and psychological state
+stress|stress|mental or emotional pressure
+well-being|farovonlik|state of being healthy and happy
+life expectancy|umr davomiyligi|average years a person lives
+healthcare|sog’liqni saqlash|medical services
+balanced diet|muvozanatli ovqatlanish|eating all nutrients in proportion
+fitness|jismoniy tayyorgarlik|physical strength and health
+chronic|surunkali|lasting a long time
+recovery|tuzalish|return to health`],
+["Society",`society|jamiyat|people living together
+community|jamoa|group living in one area
+government|hukumat|group that rules a country
+legislation|qonunchilik|laws
+regulation|tartibga solish|official rule
+policy|siyosat|plan of action
+authority|hokimiyat|power to give orders
+citizen|fuqaro|member of a country
+equality|tenglik|same rights for all
+discrimination|kamsitish|unfair treatment
+poverty|kambag’allik|lack of money
+unemployment|ishsizlik|lack of jobs
+inequality|tengsizlik|unfair difference
+crime|jinoyat|illegal act
+punishment|jazo|penalty for wrongdoing
+prison|qamoqxona|place for criminals
+rehabilitation|reabilitatsiya|helping someone return to normal life
+tax|soliq|money paid to government
+welfare|ijtimoiy ta’minot|state support for people in need
+generation gap|avlodlar tafovuti|difference between age groups`],
+["Economy & Work",`economy|iqtisodiyot|system of money and trade
+income|daromad|money earned
+employment|bandlik|having paid work
+employee|xodim|person who works for pay
+employer|ish beruvchi|person who hires workers
+salary|maosh|regular pay
+workforce|ishchi kuchi|all people able to work
+profit|foyda|money gained after costs
+industry|sanoat|manufacturing activity
+trade|savdo|buying and selling
+export|eksport|sell goods abroad
+import|import|bring goods from abroad
+globalisation|globallashuv|world becoming connected
+inflation|inflyatsiya|rise in prices
+consumer|iste’molchi|person who buys goods
+demand|talab|desire to buy
+supply|taklif|amount available
+investment|sarmoya|money put in to earn more
+career|martaba|long-term job path
+work-life balance|ish va shaxsiy hayot muvozanati|time for both job and personal life`],
+["Task 1 Graphs",`increase|oshmoq|go up
+decrease|kamaymoq|go down
+fluctuate|tebranmoq|change up and down
+remain stable|barqaror qolmoq|stay the same
+peak|cho’qqiga chiqmoq|reach the highest point
+plummet|keskin tushmoq|fall very fast
+soar|keskin ko’tarilmoq|rise very fast
+proportion|ulush|a part of a whole
+percentage|foiz|part of 100
+figure|raqam, ko’rsatkich|a number
+trend|tendensiya|general direction of change
+approximately|taxminan|about, roughly
+dramatic|keskin|sudden and striking
+gradual|asta-sekin|slow and steady
+slight|ozgina|very small
+steady|barqaror|constant, regular
+significantly|sezilarli darajada|to a notable degree
+respectively|mos ravishda|in the order mentioned
+in contrast|aksincha|on the opposite side
+whereas|holbuki|while, but`],
+["Linking & Evaluation",`furthermore|bundan tashqari|in addition
+moreover|qolaversa|also, besides
+nevertheless|shunga qaramay|however, despite that
+consequently|natijada|as a result
+therefore|shuning uchun|for that reason
+in addition|qo’shimcha ravishda|also
+on the other hand|boshqa tomondan|from a different view
+for instance|masalan|for example
+in conclusion|xulosa qilib aytganda|to sum up
+advocate|yoqlamoq, tarafdor bo’lmoq|publicly support
+controversial|munozarali|causing disagreement
+inevitable|muqarrar|certain to happen
+beneficial|foydali|helpful, good
+detrimental|zararli|harmful
+substantial|katta, sezilarli|large in amount
+ultimately|oxir-oqibat|in the end
+widespread|keng tarqalgan|found in many places
+mainstream|asosiy oqim|normal, accepted by most
+tackle|hal qilmoq, bartaraf etmoq|deal with a problem
+overcome|yengib o’tmoq|succeed in dealing with`]
+];
+var X=`significant|Ahamiyati katta, e’tiborga loyiq|There was a significant rise in prices.
+approach|Muammoga yondashish usuli|We need a new approach to teaching.
+benefit|Foyda yoki yaxshi natija|Exercise has many health benefits.
+challenge|Yengish qiyin bo’lgan vazifa|Climate change is a global challenge.
+consequence|Biror ishning natijasi|Pollution has serious consequences.
+contribute|Umumiy ishga o’z ulushini qo’shish|Cars contribute to air pollution.
+crucial|Juda muhim, hal qiluvchi|Sleep is crucial for learning.
+demonstrate|Aniq ko’rsatib berish|The data demonstrate a clear trend.
+derive|Biror manbadan olish|Many words derive from Latin.
+emphasize|Alohida urg’u berish|Teachers emphasize the importance of reading.
+enhance|Sifatini oshirish|Technology can enhance learning.
+establish|Yangi narsa tashkil qilish|They established a new university.
+estimate|Taxminan hisoblab chiqish|Experts estimate the cost at $1m.
+evidence|Isbotlovchi dalil|There is strong evidence for this.
+factor|Natijaga ta’sir qiluvchi omil|Cost is a key factor.
+fundamental|Eng asosiy, tub|Education is a fundamental right.
+impact|Kuchli ta’sir|Social media has a major impact.
+indicate|Ishora qilish, ko’rsatish|Results indicate a decline.
+involve|O’z ichiga olish, jalb etish|The job involves travelling.
+maintain|Saqlab turish|Governments must maintain public roads.
+analyse|Batafsil o’rganib chiqish|Researchers analyse the survey data.
+assume|Isbotsiz to’g’ri deb hisoblash|We cannot assume everyone agrees.
+attribute|Sababini biror narsaga bog’lash|He attributes his success to hard work.
+conclude|Xulosa chiqarish|The study concluded that exercise helps.
+conduct|Tadqiqot yoki ish o’tkazish|Scientists conduct experiments daily.
+consider|Diqqat bilan o’ylab ko’rish|Consider both sides of the argument.
+define|Ma’nosini aniq tushuntirish|It is hard to define happiness.
+determine|Aniq bilib olish, belgilash|Tests determine the final grade.
+distinguish|Farqini ajratib bilish|Children distinguish fact from opinion.
+examine|Sinchiklab tekshirish|The report examines causes of crime.
+identify|Tanib olish, aniqlash|Doctors identify problems early.
+illustrate|Misol yoki rasm bilan tushuntirish|The graph illustrates population growth.
+imply|Bevosita aytmasdan anglatish|Higher prices imply lower demand.
+interpret|Ma’nosini tushuntirib berish|People interpret statistics differently.
+justify|Sababini asoslab berish|Nothing can justify violence.
+obtain|Qo’lga kiritish|Students obtain a degree after four years.
+occur|Yuz bermoq|Floods occur every spring.
+predict|Kelajakni oldindan aytish|Nobody can predict the future.
+promote|Qo’llab-quvvatlash, targ’ib qilish|Schools should promote healthy eating.
+reveal|Yashirin narsani ochib berish|The survey revealed surprising results.
+pollution|Tabiatga zarar yetkazuvchi moddalar|Air pollution harms children’s health.
+climate change|Iqlimning uzoq muddatli o’zgarishi|Climate change threatens coastal cities.
+global warming|Yer haroratining ko’tarilishi|Global warming is melting glaciers.
+greenhouse gas|Issiqlikni ushlab qoluvchi gaz|Cars release greenhouse gases.
+emission|Havoga chiqarilgan gaz|We must cut carbon emissions.
+renewable energy|Tugamaydigan energiya manbai|Solar is a renewable energy source.
+fossil fuel|Ko’mir, neft va gaz kabi yoqilg’i|Burning fossil fuels warms the planet.
+deforestation|O’rmonlarni ommaviy kesish|Deforestation destroys animal habitats.
+biodiversity|Tirik organizmlarning xilma-xilligi|Rainforests have rich biodiversity.
+endangered species|Yo’q bo’lib ketish xavfidagi turlar|Tigers are an endangered species.
+habitat|Hayvonning tabiiy yashash joyi|Pollution damages marine habitats.
+ecosystem|Tirik mavjudotlar va muhit tizimi|Coral reefs are fragile ecosystems.
+sustainable|Uzoq muddat davom eta oladigan|We need sustainable farming methods.
+conservation|Tabiatni asrab-avaylash|Wildlife conservation saves many species.
+recycle|Materialni qayta ishlatish|Please recycle plastic bottles.
+waste|Keraksiz qoldiq materiallar|Households produce too much waste.
+drought|Uzoq davom etgan qurg’oqchilik|The drought destroyed the harvest.
+flood|Suvning quruqlikni bosishi|Floods forced families to leave.
+extinction|Turning butunlay yo’q bo’lishi|Hunting led to the dodo’s extinction.
+natural resources|Tabiatdan olinadigan boyliklar|Oil is a valuable natural resource.
+curriculum|Maktabda o’tiladigan fanlar majmui|The curriculum includes science and art.
+literacy|O’qish va yozishni bilish|Literacy rates have improved greatly.
+tuition fees|Ta’lim uchun to’lanadigan pul|Tuition fees are rising each year.
+scholarship|O’qish uchun beriladigan mablag’|She won a scholarship to Oxford.
+compulsory|Qonun bo’yicha majburiy|School is compulsory until sixteen.
+higher education|Universitet darajasidagi ta’lim|Higher education should be affordable.
+vocational|Kasb-hunarga oid|Vocational courses teach practical skills.
+academic performance|Talabaning o’zlashtirish darajasi|Sleep affects academic performance.
+skill|Biror ishni yaxshi qila olish|Communication is a key skill.
+knowledge|Bilim va tushuncha|Reading expands your knowledge.
+qualification|Malakani tasdiqlovchi hujjat|You need a qualification for this job.
+lecture|Talabalarga o’qiladigan ma’ruza|I attended a lecture on economics.
+assignment|O’quvchiga berilgan vazifa|The assignment is due on Friday.
+graduate|Diplom olgan kishi|Graduates often struggle to find jobs.
+enrol|Kursga rasman yozilish|He enrolled in a language course.
+distance learning|Masofadan turib o’qish|Distance learning saves travel time.
+peer|Yoshi yoki maqomi teng odam|Teenagers are influenced by their peers.
+discipline|Qoidalarga rioya qilish odati|Good discipline helps students succeed.
+critical thinking|Faktlarni tahlil qilib baho berish|Schools should teach critical thinking.
+extracurricular|Dars soatidan tashqari faoliyat|Extracurricular activities build confidence.
+innovation|Yangi g’oya yoki usul|Innovation drives economic growth.
+invention|Yangi yaratilgan narsa|The telephone was a great invention.
+artificial intelligence|Inson kabi fikrlaydigan mashinalar|Artificial intelligence is changing medicine.
+automation|Ishni mashinalarga topshirish|Automation may replace many jobs.
+device|Maxsus vazifali qurilma|Most people own a mobile device.
+software|Kompyuter dasturlari|The software updates automatically.
+digital|Elektron ma’lumotlarga asoslangan|We live in a digital age.
+network|O’zaro bog’langan tizim|The school has a wireless network.
+data|Fakt va raqamlar to’plami|Companies collect personal data.
+surveillance|Odamlarni yaqindan kuzatish|Cameras increase public surveillance.
+privacy|Shaxsiy hayotning daxlsizligi|Online privacy is a growing concern.
+cybercrime|Internetdagi jinoyat|Cybercrime costs billions every year.
+breakthrough|Muhim yangi kashfiyot|Doctors announced a medical breakthrough.
+cutting-edge|Eng zamonaviy, ilg’or|The lab uses cutting-edge equipment.
+obsolete|Endi ishlatilmaydigan, eskirgan|Typewriters are now obsolete.
+addiction|To’xtata olmaslik holati|Phone addiction affects teenagers.
+social media|Ma’lumot almashish platformalari|Social media connects people worldwide.
+online|Internetga ulangan holda|More people shop online today.
+user-friendly|Foydalanishga oson|The app is simple and user-friendly.
+technological advance|Texnologiyadagi yutuq|Technological advances improve daily life.
+nutrition|Salomatlik uchun zarur oziq|Good nutrition prevents many diseases.
+obesity|Haddan tashqari semirib ketish|Obesity is rising among children.
+sedentary|Ko’p o’tirib, kam harakat qilish|A sedentary lifestyle harms health.
+disease|Kasallik|Smoking causes serious disease.
+treatment|Tibbiy davolash|Early treatment saves lives.
+prevention|Biror narsaning oldini olish|Prevention is better than cure.
+symptom|Kasallik alomati|Fever is a common symptom.
+diagnosis|Kasallikni aniqlash|Early diagnosis improves recovery.
+cure|Kasallikni yo’qotuvchi davo|There is no cure for the flu.
+epidemic|Kasallikning keng tarqalishi|The epidemic spread across the region.
+immune system|Tananing kasallikka qarshi himoyasi|Sleep strengthens the immune system.
+mental health|Ruhiy va hissiy holat|Schools should support mental health.
+stress|Ruhiy bosim, zo’riqish|Exams cause a lot of stress.
+well-being|Sog’lom va baxtli bo’lish holati|Exercise improves overall well-being.
+life expectancy|Odamning o’rtacha yashash muddati|Life expectancy has increased worldwide.
+healthcare|Tibbiy xizmatlar tizimi|Healthcare should be free for all.
+balanced diet|Barcha oziqni me’yorida iste’mol qilish|A balanced diet includes vegetables.
+fitness|Jismoniy kuch va sog’lomlik|Regular fitness keeps you energetic.
+chronic|Uzoq vaqt davom etadigan|Chronic illness requires long-term care.
+recovery|Sog’ayish jarayoni|His recovery took six months.
+society|Birga yashovchi odamlar jamlanmasi|Technology has changed modern society.
+community|Bir hududda yashovchi guruh|Neighbours form a strong community.
+government|Mamlakatni boshqaruvchi organ|The government raised taxes.
+legislation|Qonunlar majmui|New legislation protects workers.
+regulation|Rasmiy qoida, tartib|Stricter regulation could reduce pollution.
+policy|Harakat rejasi, siyosat|The school has a strict policy.
+authority|Buyruq berish huquqi|Local authorities fund public parks.
+citizen|Davlat fuqarosi|Every citizen has the right to vote.
+equality|Hamma uchun teng huquq|Gender equality benefits everyone.
+discrimination|Adolatsiz munosabat|Discrimination at work is illegal.
+poverty|Pul yoki mablag’ yetishmasligi|Education helps reduce poverty.
+unemployment|Ish topa olmaslik holati|Unemployment is high among youth.
+inequality|Adolatsiz tafovut|Income inequality is increasing.
+crime|Qonunga zid qilmish|Crime rates fell last year.
+punishment|Gunoh uchun beriladigan jazo|Harsh punishment does not stop crime.
+prison|Jinoyatchilar saqlanadigan joy|Many prisons are overcrowded.
+rehabilitation|Jamiyatga qaytishga yordam|Rehabilitation helps prisoners find work.
+tax|Davlatga to’lanadigan pul|High taxes fund public services.
+welfare|Davlatning muhtojlarga yordami|Welfare supports the elderly.
+generation gap|Avlodlar o’rtasidagi qarashlar farqi|The generation gap causes family conflict.
+economy|Pul va savdo tizimi|The economy grew by two percent.
+income|Ishlab topilgan pul|Low income families struggle.
+employment|Haq to’lanadigan ishga ega bo’lish|Employment rates are rising.
+employee|Maosh evaziga ishlovchi|Employees deserve fair pay.
+employer|Ishchilarni yollovchi shaxs|Employers value teamwork.
+salary|Doimiy oylik maosh|She earns a high salary.
+workforce|Ishlay oladigan barcha odamlar|Women form half the workforce.
+profit|Xarajatlardan keyin qolgan foyda|The firm made a huge profit.
+industry|Ishlab chiqarish sohasi|Heavy industry pollutes rivers.
+trade|Sotish va sotib olish|Trade links countries together.
+export|Tovarni chet elga sotish|Cotton is a major export.
+import|Tovarni chetdan olib kelish|The country imports most of its oil.
+globalisation|Dunyoning o’zaro bog’lanishi|Globalisation affects local cultures.
+inflation|Narxlarning umumiy oshishi|Inflation reduces buying power.
+consumer|Tovar sotib oluvchi shaxs|Consumers want cheaper products.
+demand|Sotib olishga bo’lgan istak|Demand for electric cars is growing.
+supply|Mavjud tovar miqdori|Supply cannot meet demand.
+investment|Ko’proq topish uchun sarflangan pul|Investment in education pays off.
+career|Uzoq muddatli kasbiy yo’l|She started a career in law.
+work-life balance|Ish va shaxsiy hayot uyg’unligi|Flexible hours improve work-life balance.
+increase|Ko’tarilish, oshish|Sales increased sharply in 2020.
+decrease|Pasayish, kamayish|Costs decreased by ten percent.
+fluctuate|Goh oshib, goh tushish|Prices fluctuated throughout the year.
+remain stable|O’zgarmay turish|Numbers remained stable until 2015.
+peak|Eng yuqori nuqtaga yetish|Sales peaked at 500 in July.
+plummet|Juda tez pasayish|Oil prices plummeted in 2014.
+soar|Juda tez ko’tarilish|Demand soared after the launch.
+proportion|Butunning bir qismi|A large proportion use public transport.
+percentage|Yuzdan bir qism|The percentage of users doubled.
+figure|Son, ko’rsatkich|The figure rose to 40 million.
+trend|O’zgarishning umumiy yo’nalishi|The graph shows an upward trend.
+approximately|Aniq emas, taxminan|Approximately 30% of people agreed.
+dramatic|To’satdan va ko’zga tashlanadigan|There was a dramatic fall in sales.
+gradual|Sekin va izchil|A gradual increase was recorded.
+slight|Juda kichik|A slight decline followed.
+steady|Doimiy va tekis|Steady growth continued for years.
+significantly|Sezilarli darajada|Costs fell significantly.
+respectively|Aytilgan tartibda|Men and women scored 5 and 7 respectively.
+in contrast|Qarama-qarshi holda|In contrast, imports declined.
+whereas|Aksincha, esa|Urban areas grew, whereas rural areas shrank.
+furthermore|Bundan tashqari|Furthermore, it saves money.
+moreover|Bundan ham muhimi, qolaversa|Moreover, it protects the environment.
+nevertheless|Shunga qaramay|Nevertheless, many people disagree.
+consequently|Natijada|Consequently, sales dropped.
+therefore|Shu sababli|Therefore, action is needed.
+in addition|Qo’shimcha ravishda|In addition, fees are rising.
+on the other hand|Boshqa nuqtai nazardan|On the other hand, it costs more.
+for instance|Misol uchun|For instance, cycling reduces traffic.
+in conclusion|Yakunida, xulosa qilib|In conclusion, both views are valid.
+advocate|Ochiq qo’llab-quvvatlash|Many experts advocate shorter workweeks.
+controversial|Bahs-munozara uyg’otuvchi|Animal testing is controversial.
+inevitable|Albatta sodir bo’ladigan|Change is inevitable.
+beneficial|Foydali, yaxshi|Sport is beneficial for teenagers.
+detrimental|Zarar yetkazuvchi|Junk food is detrimental to health.
+substantial|Katta miqdordagi|A substantial amount was invested.
+ultimately|Oxir-oqibat|Ultimately, the choice is personal.
+widespread|Ko’p joyda uchraydigan|Poverty remains widespread.
+mainstream|Ko’pchilik qabul qilgan oqim|Electric cars are now mainstream.
+tackle|Muammoni hal qilishga kirishish|Governments must tackle unemployment.
+overcome|Qiyinchilikni yengish|She overcame her fear of speaking.`;
+var all=[],n=0,M={};
+X.split("\n").forEach(function(l){var p=l.split("|");M[p[0]]=p});
+D.forEach(function(c){c[1].split("\n").forEach(function(l){var p=l.split("|"),x=M[p[0]]||[];all.push({id:++n,cat:c[0],en:p[0],uz:p[1],m:p[2],um:x[1]||"",ex:x[2]||""})})});
+var $=function(i){return document.getElementById(i)},rev=false,cat="All",order=all.slice(),S={b:{},d:{},day:"",n:0,streak:0,last:""},GOAL=10,DAY=864e5;
+try{var s0=JSON.parse(localStorage.getItem("ielts_srs")||"null");if(s0)S=s0}catch(e){}
+function save(){try{localStorage.setItem("ielts_srs",JSON.stringify(S))}catch(e){}}
+function ds(t){var d=new Date(t);return d.getFullYear()+"-"+(d.getMonth()+1)+"-"+d.getDate()}
+function roll(){var t=ds(Date.now());if(S.day!==t){S.day=t;S.n=0}}
+function head(){roll();var m=0;for(var k in S.b)if(S.b[k]>=4)m++;
+$("s1").textContent=S.streak;$("s2").textContent=S.n+"/"+GOAL;$("s3").textContent=m;
+$("b2").style.width=Math.min(100,S.n/GOAL*100)+"%";$("b3").style.width=m/2+"%"}
+function grade(id,ok){roll();if(S.b[id]===undefined)S.n++;var b=ok?Math.min((S.b[id]||0)+1,5):0;S.b[id]=b;
+S.d[id]=Date.now()+[6e5,DAY,3*DAY,7*DAY,14*DAY,30*DAY][b];
+var t=ds(Date.now());if(S.last!==t){S.streak=S.last===ds(Date.now()-DAY)?S.streak+1:1;S.last=t}save();head()}
+function say(t){try{var u=new SpeechSynthesisUtterance(t);u.lang="en-US";u.rate=.9;speechSynthesis.cancel();speechSynthesis.speak(u)}catch(e){}}
+function face(cls,w,uzSide,big){var t=uzSide?w.uz:w.en,m=uzSide?w.um:w.m;
+return '<div class="face '+cls+'"><span class="tag">'+(uzSide?"Oʻzbekcha":"English")+' · '+w.cat+'</span><span class="num">#'+w.id+'</span><div class="t">'+t+'</div><div class="m">'+m+'</div>'+(cls==="back"?'<div class="ex">'+w.ex+'</div>':'')+(uzSide?'':'<button class="spk">🔊</button>')+'</div>'}
+function cardEl(w,big){var d=document.createElement("div");d.className="card"+(big?" big":"");
+d.innerHTML='<div class="in">'+face("front",w,rev)+face("back",w,!rev)+'</div>';
+d.tabIndex=0;d.onclick=function(){d.classList.toggle("flip")};d.onkeydown=function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();d.classList.toggle("flip")}};
+d.querySelectorAll(".ex").forEach(function(x){x.onclick=function(e){e.stopPropagation();say(x.textContent)}});
+d.querySelectorAll(".spk").forEach(function(b){b.onclick=function(e){e.stopPropagation();say(w.en)}});return d}
+function browse(){var s=$("q").value.toLowerCase().trim(),g=$("grid");g.innerHTML="";
+order.filter(function(w){return(cat==="All"||(cat==="⚠ Weak"?S.b[w.id]===0:w.cat===cat))&&(!s||(w.en+w.uz+w.m+w.um).toLowerCase().indexOf(s)>-1)}).forEach(function(w){g.appendChild(cardEl(w))})}
+var sq=[];
+function study(){roll();var now=Date.now(),due=all.filter(function(w){return S.b[w.id]!==undefined&&S.d[w.id]<=now}),nw=all.filter(function(w){return S.b[w.id]===undefined}).slice(0,Math.max(0,GOAL-S.n));sq=due.concat(nw);stNext()}
+function stNext(){var c=$("stc");c.innerHTML="";if(!sq.length){c.innerHTML='<div class="panel glass"><h2>🎉 All done for now</h2><p class="hint">Come back later — Qaytib keling. Or try the Quiz!</p></div>';return}
+var w=sq[0];c.appendChild(cardEl(w,true));var a=document.createElement("div");a.className="act";
+a.innerHTML='<button class="again">🔁 Again</button><button class="good">✓ Good</button>';c.appendChild(a);
+var p=document.createElement("p");p.className="hint";p.style.textAlign="center";p.style.marginTop="12px";p.textContent=sq.length+" left";c.appendChild(p);
+a.children[0].onclick=function(){grade(w.id,false);sq.push(sq.shift());stNext()};
+a.children[1].onclick=function(){grade(w.id,true);sq.shift();stNext()}}
+var qs=[],qi=0,sc=0;
+function shuffle(a){a=a.slice();for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1)),t=a[i];a[i]=a[j];a[j]=t}return a}
+function quiz(){qs=shuffle(all).slice(0,10);qi=0;sc=0;qNext()}
+function qNext(){var c=$("qzc");if(qi>=qs.length){c.innerHTML='<h2>Score: '+sc+' / '+qs.length+'</h2><p class="hint">'+(sc>=8?"Excellent! Zoʻr!":"Keep going — davom eting!")+'</p><button id="again">↺ New quiz</button>';$("again").onclick=quiz;return}
+var w=qs[qi],ky=function(x){return(rev?x.en:x.uz).split(",")[0].trim()},seen={};seen[ky(w)]=1;var o=shuffle(shuffle(all).filter(function(x){var a=ky(x);if(seen[a])return false;seen[a]=1;return true}).slice(0,3).concat(w));
+c.innerHTML='<p class="hint">'+(qi+1)+' / '+qs.length+'</p><div class="q">'+(rev?w.uz:w.en)+'</div><div class="opts"></div>';
+var h=c.querySelector(".opts");if(!rev)say(w.en);
+o.forEach(function(x){var b=document.createElement("button");b.textContent=rev?x.en:x.uz;
+b.onclick=function(){var ok=x.id===w.id;h.querySelectorAll("button").forEach(function(z){z.disabled=true});b.className=ok?"ok":"no";
+if(!ok)h.querySelectorAll("button").forEach(function(z){if(z.textContent===(rev?w.en:w.uz))z.className="ok"});
+if(ok)sc++;grade(w.id,ok);qi++;setTimeout(qNext,ok?700:1500)};h.appendChild(b)})}
+document.querySelectorAll(".tab").forEach(function(t){t.onclick=function(){document.querySelectorAll(".tab").forEach(function(x){x.classList.remove("on")});t.classList.add("on");
+["br","st","qz","ty","ai"].forEach(function(v){$(v).classList.toggle("hide",v!==t.dataset.v)});if(t.dataset.v==="st")study();if(t.dataset.v==="qz")quiz();if(t.dataset.v==="ty")tyStart()}});
+$("dir").onclick=function(){rev=!rev;$("dir").textContent=rev?"UZ → EN":"EN → UZ";browse();if(!$("st").classList.contains("hide"))stNext();if(!$("qz").classList.contains("hide"))qNext()};
+var ch=$("chips");["All","⚠ Weak"].concat(D.map(function(c){return c[0]})).forEach(function(c){var b=document.createElement("button");b.className="chip"+(c==="All"?" on":"");b.textContent=c;
+b.onclick=function(){cat=c;ch.querySelectorAll(".chip").forEach(function(x){x.classList.remove("on")});b.classList.add("on");browse()};ch.appendChild(b)});
+$("q").oninput=browse;$("shuf").onclick=function(){order=shuffle(order);browse()};
+var hist=[],mode="ex",busy=false,sel=$("aiw");
+all.forEach(function(w){var o=document.createElement("option");o.value=w.id;o.textContent=w.en+" — "+w.uz;sel.appendChild(o)});
+function cw(){return all[+sel.value-1]}
+function aiUi(){var t=$("ait"),g=$("aig");t.classList.toggle("hide",mode==="ex"||(mode==="sp"&&!hist.length));
+t.placeholder=mode==="ck"?"Write a sentence with this word…":"Your answer in English…";
+g.textContent=mode==="ex"?"Tushuntir":mode==="ck"?"Tekshir":(hist.length?"Send":"Start")}
+function msg(c,t){var d=document.createElement("div");d.className="msg "+c;d.textContent=t;$("ailog").appendChild(d);return d}
+async function ask(text,show){
+if(busy)return;var s=window.claude&&claude.use?await claude.use("sample"):null;
+if(!s){msg("a","AI is available only on the published Claude page.");return}
+busy=true;if(show)msg("u",show);var m=msg("a","…");hist.push({role:"user",content:text});
+try{var r=await s(hist,{cache:false,onText:function(o){m.textContent=o.text}});m.textContent=r.text;hist.push({role:"assistant",content:r.text})}
+catch(e){hist.pop();m.textContent=e&&e.code==="not_granted"?"Permission denied.":"Error — try again.";}
+busy=false;aiUi()}
+document.querySelectorAll(".modes button").forEach(function(b){b.onclick=function(){document.querySelectorAll(".modes button").forEach(function(x){x.classList.remove("on")});b.classList.add("on");mode=b.dataset.m;hist=[];$("ailog").innerHTML="";aiUi()}});
+sel.onchange=function(){hist=[];$("ailog").innerHTML="";aiUi()};
+$("aig").onclick=function(){var w=cw(),t=$("ait").value.trim(),W='"'+w.en+'" (Uzbek: '+w.uz+')';
+if(mode==="ex"){hist=[];ask("You are an IELTS tutor for an Uzbek speaker. Word: "+W+". Explain it in Uzbek: 1) meaning 2) three IELTS-style example sentences with Uzbek translations 3) two collocations 4) one synonym. Under 150 words, no markdown.",null)}
+else if(mode==="ck"){if(!t)return;hist=[];ask("You are an IELTS tutor for an Uzbek speaker. Target word: "+W+'. Student sentence: "'+t+'". In Uzbek: say whether it is correct, give the corrected English sentence, briefly explain mistakes, and one tip for a higher band. No markdown.',t);$("ait").value=""}
+else if(!hist.length){ask("You are an IELTS Speaking Part 1 examiner. Pick a topic related to the word "+W+". Ask me ONE question in English. After each answer of mine, give short feedback in Uzbek (grammar, vocabulary, and use of the word), then ask the next question. No markdown.",null);setTimeout(aiUi,0)}
+else{if(!t)return;ask(t,t);$("ait").value=""}};
+/*A*/var ALT={analyse:["analyze"],globalisation:["globalization"],enrol:["enroll"],emphasize:["emphasise"]};
+function nz(s){return s.toLowerCase().replace(/[-\s]+/g," ").trim()}
+function uk(x){return x.uz.split(",")[0].trim()}
+function esc(c){return c==="<"?"&lt;":c===">"?"&gt;":c==="&"?"&amp;":c}
+function df(a,c){var n=a.length,m=c.length,L=[],i,j,d=0;for(i=0;i<=n;i++){L[i]=[];for(j=0;j<=m;j++)L[i][j]=0}
+for(i=n-1;i>=0;i--)for(j=m-1;j>=0;j--)L[i][j]=a[i]===c[j]?L[i+1][j+1]+1:Math.max(L[i+1][j],L[i][j+1]);
+var A="",C="";i=0;j=0;while(i<n&&j<m){if(a[i]===c[j]){A+=esc(a[i]);C+=c[j];i++;j++}else if(L[i+1][j]>=L[i][j+1]){A+="<s>"+esc(a[i])+"</s>";i++;d++}else{C+="<u>"+c[j]+"</u>";j++;d++}}
+while(i<n){A+="<s>"+esc(a[i++])+"</s>";d++}while(j<m){C+="<u>"+c[j++]+"</u>";d++}return[A,C,d]}/*B*/
+var ty=[],ti=0,ts=0,tdone=false;
+function tyStart(){ty=shuffle(all).slice(0,10);ti=0;ts=0;tyNext()}
+function tyNext(){var c=$("tyc");if(ti>=ty.length){c.innerHTML='<h2>Natija: '+ts+' / '+ty.length+'</h2><p class="hint">'+(ts>=8?"Zo’r!":"Davom eting!")+'</p><button id="tya">↺ Yana</button>';$("tya").onclick=tyStart;return}
+var w=ty[ti];tdone=false;c.innerHTML='<p class="hint">'+(ti+1)+' / '+ty.length+' · Inglizchasini yoz</p><div class="q">'+w.uz+'</div><p class="hint">'+w.um+'</p><input id="tyi" placeholder="English…" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false"><div class="tyr" id="tyr"></div><button class="go" id="tyb">Tekshirish</button>';
+var i=$("tyi"),b=$("tyb");i.focus();
+function go(){if(tdone){ti++;tyNext();return}var a=i.value.trim();if(!a)return;tdone=true;i.readOnly=true;
+var k=uk(w),cs=all.filter(function(x){return uk(x)===k}),hit=cs.filter(function(x){return nz(x.en)===nz(a)||(ALT[x.en]||[]).some(function(z){return nz(z)===nz(a)})})[0],r=$("tyr");
+if(hit){ts++;grade(w.id,true);r.innerHTML='<div class="rok">✓ To’g’ri! — '+hit.en+'</div><div class="m">'+hit.ex+'</div>'}
+else{grade(w.id,false);var best=null;cs.forEach(function(x){var d=df(a.toLowerCase(),x.en.toLowerCase());if(!best||d[2]<best.d[2])best={x:x,d:d}});
+var c2=best.x,d=best.d;
+r.innerHTML='<div class="rno">✗ '+(d[2]<=Math.max(2,Math.floor(c2.en.length/3))?"Deyarli to’g’ri — imlo xatosi":"Noto’g’ri")+'</div><div>Sening javobing: '+d[0]+'</div><div>To’g’ri yozilishi: '+d[1]+'</div><div class="m">Imlo: '+c2.en.toUpperCase().split("").join(" · ")+'</div><div class="m">'+c2.ex+'</div>'+(cs.length>1?'<div class="m">Boshqa to’g’ri javob: '+cs.filter(function(x){return x!==c2}).map(function(x){return x.en}).join(", ")+'</div>':"");say(c2.en)}
+b.textContent="Keyingi →"}
+b.onclick=go;i.onkeydown=function(e){if(e.key==="Enter")go()}}
+function isDark(){var t=document.documentElement.getAttribute("data-theme");return t?t==="dark":matchMedia("(prefers-color-scheme: dark)").matches}
+function setT(t,sv){document.documentElement.setAttribute("data-theme",t);$("thm").textContent=t==="dark"?"☀️":"🌙";var m=document.querySelector("meta[name=theme-color]");if(m)m.content=t==="dark"?"#07060f":"#f6f3ff";if(sv)try{localStorage.setItem("ielts_theme",t)}catch(e){}}
+var th0=null;try{th0=localStorage.getItem("ielts_theme")}catch(e){}
+setT(th0||(isDark()?"dark":"light"),false);$("thm").onclick=function(){setT(isDark()?"light":"dark",true)};
+aiUi();head();browse();
+if("serviceWorker" in navigator&&location.protocol.indexOf("http")===0){navigator.serviceWorker.register("sw.js").catch(function(){})}
+</script></body></html>
